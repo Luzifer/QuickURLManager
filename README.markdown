@@ -38,6 +38,7 @@ and put everything into your folder called 'build'.
 To get your own URLs into the build you'll have to do some work for it:
 
 Edit every of this files:
+
 * 'quickurlmanager_upd.xml' (It's the Template for your update document.)
 * 'vendor/update.xml' (The information for the app where to search the 
 	updates)
