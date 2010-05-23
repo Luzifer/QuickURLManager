@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/1.5">
+  <id>me.knut.QuickURLManager</id>
+  <version>__VER__</version>
+  <filename>QuickURLManager</filename>
+  <name>QuickURLManager</name>
+  <description>A tiny app to prevent too many running tabs by provide one-click access to all of your important URLs</description>
+  <initialWindow>
+    <content>QuickURLManager.html</content>
+    <visible>false</visible>
+    <minSize>400 500</minSize>
+  </initialWindow>
+  <icon>
+    <image16x16>icons/icon-16.png</image16x16>
+    <image32x32>icons/icon-32.png</image32x32>
+    <image48x48>icons/icon-48.png</image48x48>
+    <image128x128>icons/icon-128.png</image128x128>
+  </icon>
+</application>

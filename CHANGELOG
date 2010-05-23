@@ -1,0 +1,6 @@
+v.0.7-DEV:
+	+ Drag'n'Drop adding of URLs
+	- Removed annoying updater dialogs
+
+v.0.6-DEV:
+	* Some improvements in keyboard handling

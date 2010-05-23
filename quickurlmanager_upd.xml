@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
+  <version>__VER__</version>
+  <url>http://luzifer.cc/updates/__FILE__</url>
+  <description>__CHANGE__</description>
+</update>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>QuickURLManager</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="vendor/boxy.css" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="vendor/AIRAliases.js"></script>
+		<script type="application/x-shockwave-flash" src="vendor/ApplicationUpdater_UI.swf"></script>
+    <script type="text/javascript" charset="utf-8" src="vendor/jquery.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="vendor/jquery.boxy.js"></script>
+    
+    <script type="text/javascript" charset="utf-8" src="lib/QUM.datastore.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/QUM.urlstore.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/QUM.urlinfo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/QUM.main.js"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(Application.init);
+    </script>
+  </head>
+  <body>
+		<div id="appinfo">
+			<p style="text-align:center;"><strong>QuickURLManager</strong><br />v.<span class="version"></span></p>
+			<p><strong>Tastaturbefehle:</strong><br />
+				a = URL hinzufügen<br />
+				u = Nach Updates suchen<br />
+				? = Infofenster anzeigen
+			</p>
+			<p>
+				<strong>Entwicklung</strong><br />
+				2010 by <a href="http://blog.knut.me/" class="staticurl">Knut Ahlers</a>
+			</p>	
+			<ul>
+				<li><a href="http://blog.knut.me/" class="staticurl">Anwendungswebseite</a></li>
+				<li><a href="http://kuerz.es/25M" class="staticurl">Spenden</a></li>
+				<li><a href="#" onclick="Application.replaceDialog($('#feedback'), 'Feedback');$('#feedback_name').focus();">Feedback geben</a></li>
+			</ul>
+		</div>
+		<div id="addurl">
+			<p>
+				<strong>URL:</strong><br />
+				<input type="text" id="url" value="http://" />
+			</p>
+			<p>
+				<strong>Titel:</strong> <a href="#" id="getTitleBtn">[Holen]</a> <img id="addLoader" src="images/loader.gif" class="loader" /><br />
+				<input type="text" id="urltitle" value="" />
+			</p>
+			<p>
+				<a href="#" id="addURLBtn">[Hinzufügen]</a>
+			</p>
+		</div>
+		<div id="feedback">
+			<p><strong>Dein Name:</strong><br />
+				<input type="text" id="feedback_name" />
+			</p>
+			<p><strong>Dein E-Mail:</strong><br />
+				<input type="text" id="feedback_email" />
+			</p>
+			<p><strong>Dein Feedback:</strong><br />
+				<textarea id="feedback_comment" style="height:200px;"></textarea>
+			</p>
+			<p>
+				<a href="#" onclick="Application.sendFeedback();">[Feedback senden]</a>
+			</p>
+		</div>
+		<div id="statusbar">Drücke "?" für Infos...</div>
+  </body>
+</html>
