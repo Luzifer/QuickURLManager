@@ -1,3 +1,6 @@
+v.0.9-DEV:
+	* Improved window placing check to a better way
+
 v.0.8-DEV:
 	+ Check to prevent placing of window with negative coordinates
 
