@@ -1,3 +1,6 @@
+v.0.8-DEV:
+	+ Check to prevent placing of window with negative coordinates
+
 v.0.7-DEV:
 	+ Drag'n'Drop adding of URLs
 	- Removed annoying updater dialogs
